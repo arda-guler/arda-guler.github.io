@@ -12,10 +12,22 @@
 h1 {
 	text-align: center;
 	font-family: Consolas,monaco,monospace;
+	color:rgb(0,255,0);
+}
+
+h2 {
+	font-family: Consolas,monaco,monospace;
+	color:rgb(0,255,0);
+}
+
+h3 {
+	font-family: Consolas,monaco,monospace;
+	color:rgb(0,255,0);
 }
 
 p {
 	font-family: Consolas,monaco,monospace; 
+	color:rgb(0,255,0);
 }
 
 .greenButton {
@@ -50,11 +62,236 @@ p {
 
 <body style="background-color:black;">
 
+	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/index.html"'>Home Page</button>
+	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/about.html"'>About</button>
+	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/gallery.html"'>Gallery</button>
+	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/contact.html"'>Contact</button>
+
 	<br><br>
-	<h1 style="color:rgb(0,255,0);">Projects</h1>
-	<p style="color:rgb(0,255,0);">This page is under construction. See my Github page for programming projects.
-	</p>
+	<h1>Projects</h1>
+	<h2>Programming</h2>
+	<p>I can code in Python, C, C++ (and Fortran). I'm also familiar with the assembly language for x86 home computers.</p>
+	<h3>Simulators</h3>
+	<p>Simulations are only as good as our understanding of the universe is. They are often even worse due to the limitations
+	of the tools we use to simulate (now computers, quantum computers and supercomputers). However, most of the time, they are more than good enough and
+	they allow us to analyze systems in fast, cheap and flexible ways.</p>
+	<br>
 	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/os3d.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/orbitSim3D"'>orbitSim3D (OS3D)</button>
+			<p>OrbitSim3D is an orbital/celestial mechanics and space mission simulator. It uses n-body physics, which is a more realistic representation
+			of the real universe than the Keplerian 2-body systems are. It can also account for the perturbations from the non-spherical gravity sources.
+			Using OS3D you can simulate moon systems, planetary systems, star systems, lagrange points, asteroid passes, deep space maneuvers, geostationary
+			satellites, Hohmann transfers and many other things you can imagine. It is highly customizable and you can create just about any system you like,
+			as long as relativistic effects can be ignored. It can calculate orbital parameters, plot variables over time, or display variables in real-time.
+			It is also quite simple and only uses a few thousand lines of code. There is no 3rd party physics engine involved, and rendering is done in an 
+			extremely simple way via OpenGL.<br><br>OrbitSim3D is licensed under <a href="https://github.com/arda-guler/orbitSim3D/blob/master/LICENSE">
+			MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/trajectory_sim.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/TrajectorySim"'>TrajectorySim</button>
+			<p>TrajectorySim is a sounding rocket simulator. I programmed it specifically for the student rocketry society I am a part of - METU Rocket Society. 
+			Basic equations governing the flight of a rocket are actually pretty simple, but what is so impressive about this simulator is that it can do complex 
+			drag calculations. It is incredibly hard to get drag equations right without real data, and this is about as good as you can get without CFD or wind 
+			tunnel tests.<br><br>All Rights Reserved. (Although it is open source, you may NOT copy or use the software without my explicit permission.)</p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/mechuilibria.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/mechuilibria"'>Mechuilibria</button>
+			<p>Mechuilibria is a 2D particle mass simulator. It can be used to evaluate simple static or dynamic systems. You can create
+			links with various stiffness values, apply forces, calculate the center of mass of systems and observe their movements.<br><br>
+			I started working on Mechuilibria as a double pendulum calculator (after seeing some interesting videos on YouTube), but as
+			I finished programming the pendulum script, I saw that this simple physics engine had a much bigger potential. Now, you can
+			not only create pendulums, but also cars, cranes, struts, trusses or whatever other 2D systems you can come up with.<br><br>
+			Mechuilibria is licensed under <a href="https://github.com/arda-guler/Mechuilibria/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/bs_ramjet0002.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/bussard_ramjet"'>Bussard Ramjet</button>
+			<p>Bussard Ramjet is exactly about the concept it is named after: the interstellar spacecraft propulsion system. It is a rather
+			simplistic Python project that tries to simulate an interstellar spaceship scooping hydrogen from the (now better understood) 
+			interstellar medium and using the proton-proton chain to generate thrust using its nuclear fusion reactor.<br><br>
+			Bussard Ramjet is licensed under <a href="https://github.com/arda-guler/bussard_ramjet/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<h3>Science and Engineering Tools</h3>
+	<p>Apart from simulators, there are some simpler, often specialized calculation or helper tools that I've written.</p>
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/varieye.png" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/varieye"'>Varieye</button>
+			<p>Varieye is basically a FITS file reader for data from NASA space telescopes such as Kepler or TESS (Transiting 
+			Exoplanet Survey Satellite). I've written this tool for my own use while I was examining the "Planet Hunters" citizen-science
+			project on zooniverse.org. It aids the eye by doing data binning and representing the general shape of the light curves
+			with a red line.<br><br>
+			Varieye is licensed under <a href="https://github.com/arda-guler/varieye/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/rms_arm.jpg" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/RMS_Arm"'>RMS Arm</button>
+			<p>RMS Arm visualizes the kinematics of a 3 segment robotic arm with shoulder, elbow and wrist joints with limited
+			angle movement. Although it is not a true recreation, it was inspired by the Canadarm aboard ISS and the earlier ones
+			that flew on the US Space Shuttle. It uses OpenGL for 3D rendering.<br><br>
+			RMS stands for Remote Manipulator System.<br><br>
+			RMS Arm is licensed under <a href="https://github.com/arda-guler/RMS_Arm/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/injector_calc.png" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/InjectorCalc"'>Injector Calc</button>
+			<p>Injector Calc is a flow calculator tool for the initial portion of a symmetrical impinging injector setup under various
+			acceleration levels.<br><br>As much as it is a useful calculator, it was also a nice practice for GUI design. (However the GUI
+			library I've been using had major changes since its beta version and it now relies on an earlier version of the said library.)
+			<br><br>The calculations of the rest of the flow sequence is partly chaotic and requires CFD (or a flow test) - this is just a 
+			helper tool to give a quick idea to the user.</p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<h3>Music and Art Software</h3>
+	<p>I also program stuff that can help you get inspired.</p>
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/pytunegen.png" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/pyTuneGen"'>pyTuneGen</button>
+			<p>pyTuneGen is an automated music generator written in Python. (It can export them as MIDIs too!)
+			It can optionally be customized by picking scales, time signatures, bpms; or with some rather unorthodox variables 
+			(e.g. to control what ratio of bars you want to be repeated). <br><br>You may use this as a tool to get inspired -I sometimes do that myself-, 
+			or you can pick the good portions of a particular tune to use in your music. (No, I won't sue you.) That being said, there is no artificial 
+			intelligence involved; so if you are a music creator, it might also be a good tool to clean up your plagiarist subconscious. 
+			<br><br>If you've been doing that for long enough, you know what I'm talking about.<br><br>
+			<a href="https://pypi.org/project/pytunegen/">pyTuneGen is available on PyPI</a> and can easily be installed by the command 'pip install pytunegen'.
+			<br><br>pyTuneGen is licensed under <a href="https://github.com/arda-guler/pyTuneGen/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/ascii_randfield.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/ASCII_randfield"'>ASCII Randfield</button>
+			<p>ASCII Randfield is a random ASCII art generator. It combines shapes such as lines, rectangles, discs etc. and generates an ASCII
+			image. You may let it run with no parameters or configure it according to your liking. It's mainly meant to be an inspiration tool to
+			create landscapes, cityscapes, abstract art or whatever you can make of it. Its "stream" feature can also be used to generate glitchy
+			graphic effects.<br><br>
+			ASCII Randfield repository also includes seven_lines.py, which is a "command line screensaver".
+			<br><br>ASCII Randfield is licensed under <a href="https://github.com/arda-guler/ASCII_randfield/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<h3>Games</h3>
+	<p>Games? Games! Is there anything else to say?</p>
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/MD3D.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/miniDocking3D"'>miniDocking3D</button>
+			<p>miniDocking3D is a space station docking simulation game inspired by <a href="https://iss-sim.spacex.com/">SpaceX ISS Docking Simulator.</a>
+			However, there are distinct differences. I'm using OpenGL wireframe graphics for rendering, the rotation is already locked into docking
+			orientation, and there is an autopilot! Also mine has sound too, it beeps and wails alarms when necessary. You can also hear the nice
+			puffing sounds of the RCS thrusters.<br><br>
+			Ah, and since I thought it was too easy as is, you get no numbers on the HUD. Just shapes and guidelines.<br><br>
+			Also the RCS thrusters sometimes do defective maneuvers. Haha :D
+			<br><br>miniDocking3D is licensed under <a href="https://github.com/arda-guler/miniDocking3D/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/ML3D.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/miniLanding3D"'>miniLanding3D</button>
+			<p>miniLanding3D is a lunar landing simulation game. You take manual control (with optional autothrottle autopilot) of a lunar lander 
+			at the final phase of the landing, and you have to cancel your velocity and make a soft touchdown before you run out of propellant.<br><br>
+			ML3D was partially inspired by <a href="http://eaglelander3d.com/">Eagle Lander 3D</a>, a more complex simulator which simulates the 
+			historic Apollo lunar landings. My graphics might not compare, but hey - the physics and the control mechanisms are the same! (Also the code is shorter.)
+			<br><br>miniLanding3D is licensed under <a href="https://github.com/arda-guler/miniLanding3D/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/haritawars.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/HaritaWars"'>HaritaWars</button>
+			<p>HaritaWars is a mini strategy game based on a similar game I used to play in high school with my friends. The digital version
+			gives the control of countries to AI players (either with predefined actions or machine learning algorithms) and allows the user
+			to watch the events unfold as AIs do their decisions. The game runs until there is one country remaining - it might take 30 turns,
+			or it might take 3000.<br><br>
+			HaritaWars also comes with a map creation tool and instructions on how to interface your AI algorithm with the game.
+			<br><br>HaritaWars is licensed under <a href="https://github.com/arda-guler/HaritaWars/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<h2>Equipment and Machinery Design/Repair/Salvage</h2>
+	<p>This section is currently under construction.</p>
+	
+	<br>
+
+	<br><br>
 	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/index.html"'>Home Page</button>
 	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/about.html"'>About</button>
 	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/gallery.html"'>Gallery</button>
