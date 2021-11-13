@@ -35,6 +35,11 @@ p {
   color: white;
 }
 
+.greenButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
 .copyright {
 	font-family: Consolas,monaco,monospace;
 	text-align: center;
@@ -58,8 +63,10 @@ p {
 	I hope you like the retro computer graphics themed design. Please follow the links below to navigate the website.
 	</p>
 	
+	<button class="greenButton" disabled>Home Page</button>
 	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/about.html"'>About</button>
 	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/projects.html"'>Projects</button>
+	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/blog.html"'>Blog</button>
 	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/gallery.html"'>Gallery</button>
 	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/contact.html"'>Contact</button>
 	
