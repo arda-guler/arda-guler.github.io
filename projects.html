@@ -52,6 +52,28 @@ p {
   color: black;
 }
 
+.greenButtonMini {
+  background-color: #00DD00;
+  border: none;
+  color: #000000;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.greenButtonMini:hover {
+  background-color: #00FF00;
+  color: white;
+}
+
+.greenButtonMini:disabled {
+  background-color: #999999;
+  color: black;
+}
+
 .copyright {
 	font-family: Consolas,monaco,monospace;
 	text-align: center;
@@ -77,9 +99,32 @@ p {
 
 	<br><br>
 	<h1>Projects</h1>
+	
+	<div>
+	<table>
+		<tr>
+			<th>
+			<a href="#programming"> <button class="greenButtonMini"> Programming </button> </a>
+			</th>
+		</tr>
+		<tr>
+			<td><p>---></p></td>
+			<td><a href="#simulators"> <button class="greenButtonMini"> Simulators </button> </a></td>
+			<td><a href="#science-engineering"> <button class="greenButtonMini"> Science & Engineering </button> </a></td>
+			<td><a href="#music-art"> <button class="greenButtonMini"> Music & Art </button> </a></td>
+			<td><a href="#games"> <button class="greenButtonMini"> Games </button> </a></td>
+		</tr>
+	</table>
+	</div>
+	
+	<section id="programming">
+	
 	<h2>Programming</h2>
 	<p>I can code in Python, C, C++ (and Fortran). I'm also familiar with the assembly language for x86 home computers.</p>
-	<h3>Simulators</h3>
+	
+	<section>
+	
+	<h3 id="simulators">Simulators</h3>
 	<p>Simulations are only as good as our understanding of the universe is. They are often even worse due to the limitations
 	of the tools we use to simulate (now computers, quantum computers and supercomputers). However, most of the time, they are more than good enough and
 	they allow us to analyze systems in fast, cheap and flexible ways.</p>
@@ -149,8 +194,14 @@ p {
 		</span>
 	</div>
 	
+	</section>
+	
+	<br>
+	
+	<section>
+	
 	<h3>Science and Engineering Tools</h3>
-	<p>Apart from simulators, there are some simpler, often specialized calculation or helper tools that I've written.</p>
+	<p id="science-engineering">Apart from simulators, there are some simpler, often specialized calculation or helper tools that I've written.</p>
 	<br>
 	
 	<div style="float:left; display:inline-block;>
@@ -199,10 +250,14 @@ p {
 		</span>
 	</div>
 	
+	</section>
+	
 	<br>
 	
+	<section>
+	
 	<h3>Music and Art Software</h3>
-	<p>I also program stuff that can help you get inspired.</p>
+	<p id="music-art">I also program stuff that can help you get inspired.</p>
 	<br>
 	
 	<div style="float:left; display:inline-block;>
@@ -239,10 +294,14 @@ p {
 		</span>
 	</div>
 	
+	</section>
+	
 	<br>
 	
+	<section>
+	
 	<h3>Games</h3>
-	<p>Games? Games! Is there anything else to say?</p>
+	<p id="games">Games? Games! Is there anything else to say?</p>
 	<br>
 	
 	<div style="float:left; display:inline-block;>
@@ -294,8 +353,14 @@ p {
 		</span>
 	</div>
 	
+	</section>
+	
+	</section>
+	
+	<section id="equipment-machinery">
 	<h2>Equipment and Machinery Design/Repair/Salvage</h2>
 	<p>This section is currently under construction.</p>
+	</section>
 	
 	<br>
 
