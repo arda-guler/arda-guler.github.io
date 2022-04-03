@@ -152,6 +152,28 @@ p {
 	
 	<div style="float:left; display:inline-block;>
 		<span style="float:left;width:30%;">
+			<img src="images/supercluster.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/Supercluster3D"'>Supercluster3D</button>
+			<p>Supercluster3D is a cosmic scale n-body simulation that is also meant to account for various equations modeling the expansion of the 
+			universe. It can randomly generate and simulate hundreds (or many thousands, if someone has lots of time and/or a good computer) of 
+			galaxies in volumes of space that are usually measured using Megaparsecs.<br><br>
+			Supercluster3D was originally created as a response to the floating point precision errors I was facing in OrbitSim3D with extremely large 
+			and small numbers. I built the n-body simulation from ground up, but this time, I gave up on the SI units such as meters or seconds and tried 
+			to keep all numbers close to 1, by using units like Megaparsecs (and more arbitrary ones like 1E40 kilograms) in my computations. Originally 
+			I wanted to code Supercluster3D in Python just like OS3D, but simulating the interactions between hundreds of galaxies turned out to be extraordinarily 
+			slow. I thought that I finally hit the limit where I'd have to switch to a compiled language (and a fast one at that), and rewrote the program 
+			in C++. Using the GLFW library, I also implemented a basic 3D visualization.
+			<br><br>Supercluster3D is licensed under <a href="https://github.com/arda-guler/Supercluster3D/blob/master/LICENSE">
+			MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
 			<img src="images/trajectory_sim.gif" width="300">
 		</span>
 		<span style="float:right;width:60%;">
