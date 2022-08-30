@@ -101,25 +101,12 @@ p {
 	<h1>Projects</h1>
 	
 	<div>
-	<table>
-		<tr>
-			<th>
-			<a href="#programming"> <button class="greenButtonMini"> Programming </button> </a>
-			</th>
-		</tr>
-		<tr>
-			<td><p>---></p></td>
-			<td><a href="#simulators"> <button class="greenButtonMini"> Simulators </button> </a></td>
-			<td><a href="#science-engineering"> <button class="greenButtonMini"> Science & Engineering </button> </a></td>
-			<td><a href="#music-art"> <button class="greenButtonMini"> Music & Art </button> </a></td>
-			<td><a href="#games"> <button class="greenButtonMini"> Games </button> </a></td>
-		</tr>
-	</table>
+			<a href="#simulators"> <button class="greenButtonMini"> Simulators </button> </a>
+			<a href="#science-engineering"> <button class="greenButtonMini"> Science & Engineering </button> </a>
+			<a href="#music-art"> <button class="greenButtonMini"> Music & Art </button> </a>
+			<a href="#games"> <button class="greenButtonMini"> Games </button> </a>
 	</div>
 	
-	<section id="programming">
-	
-	<h2>Programming</h2>
 	<p>I can code in Python, C, C++ (and Fortran). I'm also familiar with the assembly language for x86 home computers.</p>
 	
 	<section>
@@ -137,14 +124,16 @@ p {
 		</span>
 		<span style="float:right;width:60%;">
 			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/orbitSim3D"'>orbitSim3D (OS3D)</button>
+			<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/OrbitSim3D-web/"'>OS3D Website</button>
 			<p>OrbitSim3D is an orbital/celestial mechanics and space mission simulator. It uses n-body physics, which is a more realistic representation
-			of the real universe than the Keplerian 2-body systems are. It can also account for the perturbations from the non-spherical gravity sources.
-			Using OS3D you can simulate moon systems, planetary systems, star systems, lagrange points, asteroid passes, deep space maneuvers, geostationary
-			satellites, Hohmann transfers and many other things you can imagine. It is highly customizable and you can create just about any system you like,
-			as long as relativistic effects can be ignored. It can calculate orbital parameters, plot variables over time, or display variables in real-time.
-			It is also quite simple and only uses a few thousand lines of code. There is no 3rd party physics engine involved, and rendering is done in an 
-			extremely simple way via OpenGL.<br><br>OrbitSim3D is licensed under <a href="https://github.com/arda-guler/orbitSim3D/blob/master/LICENSE">
-			MIT License.</a></p>
+			of the real universe than the Keplerian 2-body systems are. It can also account for the perturbations from the oblate-spherical gravity sources, 
+			atmospheric drag, radiation pressure effects. Using OS3D you can simulate moon systems, planetary systems, star systems, lagrange points, 
+			asteroid passes, deep space maneuvers, geostationary satellites, Hohmann transfers, solar sails and many other things you can imagine. It is highly 
+			customizable and you can create just about any system you like, as long as relativistic effects can be ignored. It can calculate orbital parameters, 
+			plot variables over time, or display variables in real-time. It is also quite simple and only uses a few thousand lines of code. There is no 3rd 
+			party physics engine involved, and rendering is done in an  extremely simple way via OpenGL.
+			<br><br>
+			OrbitSim3D is licensed under <a href="https://github.com/arda-guler/orbitSim3D/blob/master/LICENSE">MIT License.</a></p>
 		</span>
 	</div>
 	
@@ -174,14 +163,15 @@ p {
 	
 	<div style="float:left; display:inline-block;>
 		<span style="float:left;width:30%;">
-			<img src="images/trajectory_sim.gif" width="300">
+			<img src="images/mechu3d.PNG" width="300">
 		</span>
 		<span style="float:right;width:60%;">
-			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/TrajectorySim"'>TrajectorySim</button>
-			<p>TrajectorySim is a sounding rocket simulator. I programmed it specifically for the student rocketry society I am a part of - METU Rocket Society. 
-			Basic equations governing the flight of a rocket are actually pretty simple, but what is so impressive about this simulator is that it can do complex 
-			drag calculations. It is incredibly hard to get drag equations right without real data, and this is about as good as you can get without CFD or wind 
-			tunnel tests.<br><br>All Rights Reserved. (Although it is open source, you may NOT copy or use the software without my explicit permission.)</p>
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/Mechuilibria3D"'>Mechuilibria3D</button>
+			<p>Mechuilibria3D is a structural simulator for space-trusses and structures made of thin beams and ropes. It can be used to 
+			evaluate static or dynamic systems. You can create beams and ropes with various stress-strain values, apply external forces, 
+			and observe the stress states, movements, vibration cycles of the members.<br><br>
+			Mechuilibria3D was developed as the successor to the original Mechuilibria, which was a 2D version of this software.<br><br>
+			Mechuilibria3D is licensed under <a href="https://github.com/arda-guler/Mechuilibria3D/blob/master/LICENSE">MIT License.</a></p>
 		</span>
 	</div>
 	
@@ -198,7 +188,23 @@ p {
 			I started working on Mechuilibria as a double pendulum calculator (after seeing some interesting videos on YouTube), but as
 			I finished programming the pendulum script, I saw that this simple physics engine had a much bigger potential. Now, you can
 			not only create pendulums, but also cars, cranes, struts, trusses or whatever other 2D systems you can come up with.<br><br>
+			Mechuilibria has been superceded by Mechuilibria3D, but can still be used as long as no new laws of physics are enacted.<br><br>
 			Mechuilibria is licensed under <a href="https://github.com/arda-guler/Mechuilibria/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/trajectory_sim.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/TrajectorySim"'>TrajectorySim</button>
+			<p>TrajectorySim is a sounding rocket simulator. I programmed it specifically for the student rocketry society I am a part of - METU Rocket Society. 
+			Basic equations governing the flight of a rocket are actually pretty simple, but what is so impressive about this simulator is that it can do complex 
+			drag calculations. It is incredibly hard to get drag equations right without real data, and this is about as good as you can get without CFD or wind 
+			tunnel tests.<br><br>All Rights Reserved. (Although it is open source, you may NOT copy or use the software without my explicit permission.)</p>
 		</span>
 	</div>
 	
@@ -227,6 +233,20 @@ p {
 	
 	<h3>Science and Engineering Tools</h3>
 	<p id="science-engineering">Apart from simulators, there are some simpler, often specialized calculation or helper tools that I've written.</p>
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/favicon.png" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/varieye"'>NTR</button>
+			<p>Short for Nuclear Thermal Rocket, NTR calculates various performance parameters of a solid core NTR, given some design parameters.
+			It is not a simulator in the sense that the Bussard Ramjet simulator is; NTR is merely a calculator tool.<br><br>
+			NTR is licensed under <a href="https://github.com/arda-guler/NTR/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
 	<br>
 	
 	<div style="float:left; display:inline-block;>
@@ -369,7 +389,7 @@ p {
 	
 	<div style="float:left; display:inline-block;>
 		<span style="float:left;width:30%;">
-			<img src="images/ML3D.gif" width="300">
+			<img src="images/minilanding3D.PNG" width="300">
 		</span>
 		<span style="float:right;width:60%;">
 			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/miniLanding3D"'>miniLanding3D</button>
