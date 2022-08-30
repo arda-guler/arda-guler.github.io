@@ -102,7 +102,7 @@ p {
 	
 	<div>
 			<a href="#simulators"> <button class="greenButtonMini"> Simulators </button> </a>
-			<a href="#science-engineering"> <button class="greenButtonMini"> Science & Engineering </button> </a>
+			<a href="#science-engineering"> <button class="greenButtonMini"> Science & Engineering & Tech Demos </button> </a>
 			<a href="#music-art"> <button class="greenButtonMini"> Music & Art </button> </a>
 			<a href="#games"> <button class="greenButtonMini"> Games </button> </a>
 	</div>
@@ -231,19 +231,18 @@ p {
 	<section>
 	<div>
 	
-	<h3>Science and Engineering Tools</h3>
+	<h3>Science, Engineering & Technology Demonstrator Tools</h3>
 	<p id="science-engineering">Apart from simulators, there are some simpler, often specialized calculation or helper tools that I've written.</p>
 	<br>
 	
 	<div style="float:left; display:inline-block;>
 		<span style="float:left;width:30%;">
-			<img src="images/favicon.png" width="300">
+			<img src="images/2DTH.PNG" width="300">
 		</span>
 		<span style="float:right;width:60%;">
-			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/varieye"'>NTR</button>
-			<p>Short for Nuclear Thermal Rocket, NTR calculates various performance parameters of a solid core NTR, given some design parameters.
-			It is not a simulator in the sense that the Bussard Ramjet simulator is; NTR is merely a calculator tool.<br><br>
-			NTR is licensed under <a href="https://github.com/arda-guler/NTR/blob/master/LICENSE">MIT License.</a></p>
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/2D-Transient-Heat"'>2D Transient Heat</button>
+			<p>A small 2D analysis program for heat conduction in solid materials. Given material, geometry, initial temperature and heat generation/absorption
+			inputs, it can calculate temperature gradients after some certain time.
 		</span>
 	</div>
 	
@@ -260,6 +259,95 @@ p {
 			project on zooniverse.org. It aids the eye by doing data binning and representing the general shape of the light curves
 			with a red line.<br><br>
 			Varieye is licensed under <a href="https://github.com/arda-guler/varieye/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/evo2D.gif" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/Evocellon2D"'>Evocellon2D</button>
+			<p>Evocellon2D is a customizable 2D cellular automota program. The initial state of the cells and the algorithm to use
+			can be easily implemented, whether it is time based or cell-relation based. Some algorithms such as the game-of-life are
+			preprogrammed as demos.<br><br>
+			Evocellon2D is licensed under <a href="https://github.com/arda-guler/Evocellon2D/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/simpleceptor.png" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/simpleceptor"'>Simpleceptor</button>
+			<p>Simpleceptor is a perceptron AI that can learn to differentiate a certain shape from other shapes. In the Github repository, it
+			has been demostrated to be able to learn to differentiate round galaxies from edge-on-viewed galaxies, but it is definitely not
+			limited to that. That being said, this type of AI is quite primitive as far as AIs go.<br><br>
+			Simpleceptor is licensed under <a href="https://github.com/arda-guler/simpleceptor/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/bingallery.png" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/binGallery"'>BinGallery</button>
+			<p>BinGallery encodes your binary (or text) files into image files, and decodes them back into their original format. It is a quite 
+			simple cryptography method as well as a way to notice interesting patterns in the original encoding of your files and such. Yes, you
+			can also encode and decode your actual image files - however, don't expect pretty results.<br><br>
+			BinGallery is licensed under <a href="https://github.com/arda-guler/binGallery/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+		<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/favicon.png" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/varieye"'>NTR</button>
+			<p>Short for Nuclear Thermal Rocket, NTR calculates various performance parameters of a solid core NTR, given some design parameters.
+			It is not a simulator in the sense that the Bussard Ramjet simulator is; NTR is merely a calculator tool.<br><br>
+			NTR is licensed under <a href="https://github.com/arda-guler/NTR/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/space-elev.PNG" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/SpaceElevator"'>SpaceElevator</button>
+			<p>SpaceElevator can calculate the stresses on a custom-shaped tower on a custom-defined planet. I originally coded this because
+			I had read something about space elevators not being feasible on Earth with current material science due to the stresses that
+			would be involved.<br><br>
+			SpaceElevator is licensed under <a href="https://github.com/arda-guler/SpaceElevator/blob/master/LICENSE">MIT License.</a></p>
+		</span>
+	</div>
+	
+	<br>
+	
+	<div style="float:left; display:inline-block;>
+		<span style="float:left;width:30%;">
+			<img src="images/steampowerplant.PNG" width="300">
+		</span>
+		<span style="float:right;width:60%;">
+			<button class="greenButton" onclick='window.location.href = "https://github.com/arda-guler/SteamPowerPlant"'>SteamPowerPlant</button>
+			<p>During my Thermodynamics lessons, I figured that the steam power plant systems we were making calculations on to be rather... repetitive(?)
+			and thought I could program my computer to do such calculations for me. I didn't improve this program to the point I wanted, but it can
+			still solve *some* problems :).<br><br>
+			SteamPowerPlant is licensed under <a href="https://github.com/arda-guler/SteamPowerPlant/blob/master/LICENSE">MIT License.</a></p>
 		</span>
 	</div>
 	
