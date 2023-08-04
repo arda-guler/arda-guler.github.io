@@ -94,7 +94,7 @@ p {
 </style>
 
 <head>
-<title>H. A. Guler</title>
+<title>H. A. Güler</title>
 <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
@@ -106,11 +106,39 @@ p {
 	<button class="cyanButton" onclick='window.location.href = "https://github.com/arda-guler"'>GitHub</button>
 	<img src="images/bs_ramjet0001.gif" class="center">
 	<br><br>
-	<p style="color:rgb(0,255,0);">"The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom." -Isaac Asimov</p>
+	<p id="randomQuote" style="color:rgb(0,255,0);"></p>
 	
 	<br><br>
 	<p class="copyright">arda-guler, 2021 - 2023. All Rights Reserved.</p>
 
 </body>
+
+  <script>
+    const quoteList = [
+      "The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom. -Isaac Asimov",
+      "The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself. -Carl Sagan",
+      "Life is like riding a bicycle. To keep your balance, you must keep moving. -Albert Einstein",
+      "The first gulp from the glass of natural sciences will turn you into an atheist, but at the bottom of the glass God is waiting for you. -Werner Heisenberg",
+      "The most beautiful thing we can experience is the mysterious. -Albert Einstein",
+	  "If I have seen further, it is by standing on the shoulders of giants. -Isaac Newton",
+	  "Science is not only compatible with spirituality; it is a profound source of spirituality. -Carl Sagan",
+	  "The universe is a pretty big place. If it's just us, seems like an awful waste of space. -Carl Sagan",
+	  "For small creatures such as we, the vastness is bearable only through love. -Carl Sagan",
+	  "Two possibilities exist: either we are alone in the Universe or we are not. Both are equally terrifying. -Arthur C. Clarke",
+	  "Most persons are so absorbed in the contemplation of the outside world that they are wholly oblivious to what is passing on within themselves. -Nikola Tesla",
+	  "The true sign of intelligence is not knowledge but imagination. -Albert Einstein",
+	  "If you can't explain it simply, you don't understand it well enough. -Albert Einstein",
+	  "Try not to become a man of success, but rather try to become a man of value. -Albert Einstein",
+	  "The most exciting phrase to hear in science, the one that heralds new discoveries, is not 'Eureka!' but 'That's funny...' -Isaac Asimov",
+    ];
+
+    function getRandomQuote() {
+      const randomIndex = Math.floor(Math.random() * quoteList.length);
+      const randomQuote = quoteList[randomIndex];
+      document.getElementById("randomQuote").textContent = randomQuote;
+    }
+
+    getRandomQuote();
+  </script>
 
 </html>
