@@ -6,7 +6,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 50%;
 }
 
 h1 {
@@ -40,6 +40,50 @@ p {
   color: black;
 }
 
+.cyanButton {
+  background-color: #00DDDD;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.cyanButton:hover {
+  background-color: #00FFFF;
+  color: white;
+}
+
+.cyanButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.redButton {
+  background-color: #DD0000;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.redButton:hover {
+  background-color: #FF0000;
+  color: white;
+}
+
+.redButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
 .copyright {
 	font-family: Consolas,monaco,monospace;
 	text-align: center;
@@ -59,6 +103,7 @@ p {
 	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/index.html"'>Home</button>
 	<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/blog.html"'>Blog</button>
 	<button class="greenButton" disabled>Contact</button>
+	<button class="cyanButton" onclick='window.location.href = "https://github.com/arda-guler"'>GitHub</button>
 
 	<img src="images/antenna0001.PNG" class="center">
 	<br><br>
@@ -70,7 +115,7 @@ p {
 	</p>
 	
 	<br><br>
-	<p class="copyright">arda-guler, 2021 - 2022. All Rights Reserved.</p>
+	<p class="copyright">arda-guler, 2021 - 2023. All Rights Reserved.</p>
 
 </body>
 
